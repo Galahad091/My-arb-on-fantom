@@ -1,5 +1,6 @@
 # My simple arb bot on Fantom. This also can apply to EVM such as Cronos, Avax, Polygon, etc
 Lưu ý: Bot chỉ mang mục đích thử nghiệm và tham khảo
+
 **Các bước chính bot thực hiện bao gồm:**
 - Đọc smartcontract và lấy thông tin pools của một số DEXes lớn trên Fantom như Spookyswap, SpiritSwap, trên Cronos có MM Finance, VVS, Crodex
 - Lọc ra các pairs tùy theo điều kiện về thanh khoản, token trong pool
