@@ -1,0 +1,19 @@
+import json 
+pool_addresses = ['0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702']
+token0 = ['0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702']
+token1 = ['0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702','0xE5Dc9c75D4514A5a7fe370e636560699bA83C702']
+
+lp_data = []
+
+for i in range(len(pool_addresses)):
+    lp_dict = {
+        'pool_address': pool_addresses[i],
+        'token0': token0[i],
+        'token1': token1[i]
+    }
+    lp_data.append(lp_dict)
+
+with open('test_lpdata.json', 'w') as fp:
+    json.dump(lp_data,fp)
+    print('Saved.')
+    
